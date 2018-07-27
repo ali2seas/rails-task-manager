@@ -1,4 +1,6 @@
 <%= form_for(@task) do |t| %>
+
+<div class="container">
   <div class="form-group">
     <%= t.label :title %>
     <%= t.text_field :title, class: 'form-control' %>
@@ -17,6 +19,7 @@
   </div>
 
   <%= t.submit class: 'btn btn-primary' %>
+  </div>
 <% end %>
 
 
